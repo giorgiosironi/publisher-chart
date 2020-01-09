@@ -1,11 +1,4 @@
 {{/*
-Expand the name of the chart.
-*/}}
-{{- define "publisher.name" -}}
-{{- .Chart.Name -}}
-{{- end -}}
-
-{{/*
 Create a default fully qualified app name.
 */}}
 {{- define "publisher.fullname" -}}
