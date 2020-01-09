@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ include "publisher.fullname" . }}
+  name: {{ include "publisher.fullname" . }}--scholarly-articles
   labels:
     {{- include "publisher.labels" . | nindent 4 }}
 spec:
@@ -15,7 +15,7 @@ spec:
         {{- include "publisher.selectorLabels" . | nindent 8 }}
     spec:
       containers:
-        - name: {{ .Chart.Name }}
+        - name: app
           image: "{{ .Values.images.articleStore.repository }}:latest"
           imagePullPolicy: {{ .Values.images.pullPolicy }}
           ports:
