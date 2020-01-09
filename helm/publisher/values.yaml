@@ -1,7 +1,8 @@
 replicaCount: 1
 
-image:
-  repository: liberoadmin/article-store
+images:
+  articleStore:
+    repository: liberoadmin/article-store
   pullPolicy: IfNotPresent
 
 service:
