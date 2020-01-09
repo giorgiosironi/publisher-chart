@@ -4,7 +4,3 @@ images:
   articleStore:
     repository: liberoadmin/article-store
   pullPolicy: IfNotPresent
-
-service:
-  type: ClusterIP
-  port: 80
