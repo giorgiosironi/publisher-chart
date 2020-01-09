@@ -1,5 +1,3 @@
-replicaCount: 1
-
 images:
   articleStore:
     repository: liberoadmin/article-store
