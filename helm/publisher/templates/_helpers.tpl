@@ -1,11 +1,4 @@
 {{/*
-Create a default fully qualified app name.
-*/}}
-{{- define "publisher.fullname" -}}
-{{- .Release.Name  -}}
-{{- end -}}
-
-{{/*
 Create chart name and version as used by the chart label.
 */}}
 {{- define "publisher.chart" -}}

@@ -1,3 +1,3 @@
 1. Check the health of the Deployment with:
 
-kubectl get deployment {{ include "publisher.fullname" . }}
+kubectl get deployment {{ .Release.Name }}

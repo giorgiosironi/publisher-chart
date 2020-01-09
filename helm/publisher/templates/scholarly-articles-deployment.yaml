@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ include "publisher.fullname" . }}--scholarly-articles
+  name: {{ .Release.Name }}--scholarly-articles
   labels:
     {{- include "publisher.labels" . | nindent 4 }}
 spec:
