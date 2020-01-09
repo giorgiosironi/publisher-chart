@@ -1,5 +1,5 @@
 Libero Publisher vanilla Helm chart
-====================
+==================================
 
 Getting help
 ------------
