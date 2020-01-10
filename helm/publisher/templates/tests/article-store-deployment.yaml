@@ -1,0 +1,15 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: {{ .Release.Name }}--article-store-test
+  annotations:
+    "helm.sh/hook": test
+spec:
+  template:
+    spec:
+      containers:
+        - name: main
+          image: "{{ .Values.images.articleStore.repository }}:latest"
+          imagePullPolicy: {{ .Values.images.pullPolicy }}
+          command: ["ls", "-l", "node_modules"]
+      restartPolicy: Never
